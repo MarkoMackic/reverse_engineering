@@ -7,4 +7,12 @@
 
  `gcc -fno-stack-protector auth_example.c`
 
+## try it
 
+```bash
+./a.out test -> A_DENIED
+./a.out test1 -> OKI
+./a.out test2 -> OKI
+./a.out whatever -> A_DENIED
+./a.out AAAAAAAAAAAAAAAAAAAAAAAAAAAAA -> OKI ( yo yo ) 
+```
